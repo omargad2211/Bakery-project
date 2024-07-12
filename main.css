@@ -12,7 +12,7 @@
   font-weight: 400;
 }
 
-.blog-container__cards__card, .chefs__container__card, footer .footer, .order-section, .offer__list__ul {
+.blog-container__cards__card, .chefs__container__card, footer .footer, .order-section, .parallax__container, .offer__list__ul, .offer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -140,6 +140,10 @@
   text-decoration: none;
 }
 
+.offer {
+  flex-direction: column;
+  gap: 40px;
+}
 .offer__list {
   margin-bottom: 80px;
 }
@@ -175,7 +179,7 @@
 }
 .offer__cards__button {
   text-align: center;
-  margin: 50px 0;
+  margin-top: 50px;
 }
 
 header {
@@ -257,6 +261,7 @@ header .nav__btn:hover {
   position: absolute;
   top: 90%;
   left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .services__section {
@@ -357,7 +362,7 @@ header .nav__btn:hover {
 
 .parallax {
   background-image: url(/imgs/parallax-2.jpg);
-  height: 480px;
+  height: 550px;
   background-attachment: fixed;
   background-size: cover;
   position: relative;
@@ -369,10 +374,7 @@ header .nav__btn:hover {
   height: 100%;
   top: 0;
   left: 0;
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   gap: 20px;
 }
 .parallax__container img {
@@ -389,6 +391,11 @@ header .nav__btn:hover {
   top: 90%;
   left: 50%;
   transform: translatex(-50%);
+}
+@media (max-width: 768px) {
+  .parallax__container .bullets {
+    top: 95%;
+  }
 }
 
 .order-section {
@@ -483,7 +490,7 @@ footer .footer__logo img {
 
 .card {
   display: flex;
-  width: 50%;
+  width: 100%;
   padding: 0 15px;
 }
 .card img {

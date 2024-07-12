@@ -1,6 +1,6 @@
 .parallax{
     background-image: url(/imgs/parallax-2.jpg);
-    height: 480px;
+    height: 550px;
     background-attachment: fixed;
     background-size: cover;
     position: relative;
@@ -11,10 +11,9 @@
         height: 100%;
         top: 0;
         left: 0;
-        display: flex;
+        @extend %flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+
         gap: 20px;
         img{
             border-radius: 50%;
@@ -30,6 +29,9 @@
                     top: 90%;
                     left: 50%;
                     transform: translatex(-50%);
+                    @media (max-width:768px){
+                        top:95%;
+                    }
                 }
     }
 }

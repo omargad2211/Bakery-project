@@ -1,4 +1,8 @@
 .offer{
+    @extend %flex;
+    flex-direction: column;
+    gap: 40px;
+
     &__list{
         margin-bottom: 80px;
         &__ul{
@@ -19,10 +23,6 @@
         }
     }
     &__cards{
-        // display: flex;
-        // @extend %flex;
-        // flex-wrap: wrap;
-        // row-gap: $gap;
         display: grid;
         grid-template-columns: 1fr 1fr;
         justify-content: center;
@@ -33,6 +33,6 @@
     }
     &__button{
         text-align: center;
-        margin: 50px 0;
+        margin-top: 50px;
     }
 }}
