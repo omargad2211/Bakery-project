@@ -285,9 +285,19 @@ header .nav__btn:hover {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+@media (max-width: 768px) {
+  .bakery {
+    grid-template-columns: 1fr;
+  }
+}
 .bakery__img {
   background-image: url(/imgs/img-6.jpg);
   background-size: cover;
+}
+@media (max-width: 768px) {
+  .bakery__img {
+    display: none;
+  }
 }
 .bakery__section {
   background-color: #F7F7F7;

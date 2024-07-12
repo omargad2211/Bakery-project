@@ -3,13 +3,18 @@
     height: 70vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
+            @media (max-width: 768px){
+            grid-template-columns: 1fr;
+        }
     &__img{
         background-image: url(/imgs/img-6.jpg);
         background-size: cover;
+        @media (max-width: 768px){
+            display: none;
+        }
     }
     &__section{
         background-color: #F7F7F7;
-        // padding: 60px 30px;
         padding: 0px 20px ;
         &__text{
             height: 90%;
