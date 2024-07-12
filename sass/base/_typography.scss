@@ -1,0 +1,71 @@
+.card--font{
+    text-transform: capitalize;
+    @include font($titles-color, 16px,"Poppins", 600 );
+}
+
+.card__content--font{
+    @include font($text-color, 13px,"Open sans", 400 );
+}
+
+.card__content__price--font{
+    @include font($main-color, 16px,"Open sans", 700 );
+}
+
+.title--font {
+    text-transform: uppercase;
+    @include font($titles-color, 18px,"Open sans", 700 );
+}
+
+.btn--font{
+    text-transform: uppercase;
+    text-decoration: none;
+    @include font($btn-color, 13px,"Poppins", 700 );
+}
+.nav__link--font{
+    text-decoration: none;
+    text-transform: uppercase;
+    @include font(#555, 14px, "Poppins", 600);
+
+}
+.landing--font{
+    @include font($main-color, 25px, "Open sans", 600);
+}
+.landingh--font{
+    @include font(white, 35px, "Poppins", 600);
+}
+.landingp--font{
+    margin-top: 20px;
+    @include font(white, 14px, "Poppins", 400);
+}
+.services--font{
+    text-align: center;
+    @include font($text-color, 14px, "Poppins", 400);
+}
+.offer__list__ul__li--font{
+    @include font($text-color, 16px, "Poppins", 400);
+}
+.parallax__container__text--font{
+        @include font(white, 16px, "Open sans", 400);
+        padding: 20px 0;
+}
+.auther--font{
+            @include font($main-color, 16px, "Open sans", 600);
+}
+.footer__text--font{
+    text-align: center;
+     @include font(white, 16px, "Open sans", 400);
+     span{
+        color: $main-color;
+     }
+}
+.blog-container__cards__card__text{
+    h4{
+        @extend %h;
+    }
+    .before{
+        padding: 15px ;
+        @extend %p;
+    }
+    
+
+}

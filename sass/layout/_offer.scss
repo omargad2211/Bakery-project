@@ -1,0 +1,38 @@
+.offer{
+    &__list{
+        margin-bottom: 80px;
+        &__ul{
+            @extend %flex;
+            gap: 40px;
+            text-align: center;
+            @media (max-width:768px) {
+                gap: 20px;
+            }
+            &__li {
+                color:#696969 ;
+             a{
+                &:hover{
+                    @include font($main-color, 16px, "Poppins", 400);
+                }
+             }
+            }
+        }
+    }
+    &__cards{
+        // display: flex;
+        // @extend %flex;
+        // flex-wrap: wrap;
+        // row-gap: $gap;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        @media (max-width: 768px) {
+                    grid-template-columns: 1fr;
+    }
+    &__button{
+        text-align: center;
+        margin: 50px 0;
+    }
+}}

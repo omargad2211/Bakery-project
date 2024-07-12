@@ -1,0 +1,29 @@
+.blog-container{
+    &__cards{
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(3,300px);
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        @media (max-width: 768px) {
+                    grid-template-columns:400px;
+
+        }
+         @media (min-width: 768px) and (max-width:992px) {
+                    grid-template-columns:300px 300px;
+
+        }
+                @media (min-width: 1250px) {
+                    grid-template-columns:400px 400px 400px;
+
+        }
+        &__card{
+             &__text{
+            text-align: center;
+            padding: 15px;
+        }
+        }
+   
+    }
+}

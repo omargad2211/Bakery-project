@@ -1,0 +1,19 @@
+.number__coner__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    p:first-child{
+        position: relative;
+        margin-bottom: 40px;
+            @include font(white, 35px, "Poppins", 600);
+            &::before{
+                @include after-before(white, 100px)
+            }
+    }
+    p:last-child{
+            @include font(white, 16px, "Open sans", 600);
+    }
+}
+ 

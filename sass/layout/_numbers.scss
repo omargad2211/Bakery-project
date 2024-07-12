@@ -1,0 +1,19 @@
+.numbers{
+    height:30.33vh ;
+    background-image: url(/imgs/pattern-1.jpg);
+    position: relative;
+    margin-top: 80px;
+    margin-bottom: 50px;
+   &__cover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color:rgba(235, 181, 118, 0.9);
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center;
+    align-items: center;
+   }
+}

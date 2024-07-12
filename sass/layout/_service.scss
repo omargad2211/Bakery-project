@@ -1,0 +1,16 @@
+.services {
+  &__section {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+    .services__card {
+      &__img:hover {
+        @include eleHover(#555555);
+      }
+    }
+  }
+}

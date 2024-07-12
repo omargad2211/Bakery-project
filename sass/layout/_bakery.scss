@@ -1,0 +1,43 @@
+.bakery{
+    margin-bottom: 80px;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    &__img{
+        background-image: url(/imgs/img-6.jpg);
+        background-size: cover;
+    }
+    &__section{
+        background-color: #F7F7F7;
+        // padding: 60px 30px;
+        padding: 0px 20px ;
+        &__text{
+            height: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            h3{
+                @extend %h;
+                position: relative;
+                &::before{
+                    position: absolute;
+                    @include after-before($main-color, 50px)
+                }
+            }
+            p{
+                line-height: 1.6;
+                margin-top: 10px;
+                @extend %p;
+            }
+            &__btn{
+                margin-top: 40px;
+                width:150px;
+                @media (max-width:768px) {
+                    margin-top: 20px;
+                    
+                }
+            }
+        }
+    }
+
+}

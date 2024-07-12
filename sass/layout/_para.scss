@@ -1,0 +1,35 @@
+.parallax{
+    background-image: url(/imgs/parallax-2.jpg);
+    height: 480px;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    &__container{
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.7);
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        img{
+            border-radius: 50%;
+        }
+        &__text{
+            width: 50%;
+            text-align: center;
+        }
+                .bullets {
+                    display: flex;
+                    gap: 10px;
+                    position: absolute;
+                    top: 90%;
+                    left: 50%;
+                    transform: translatex(-50%);
+                }
+    }
+}
