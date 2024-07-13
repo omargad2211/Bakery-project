@@ -3,10 +3,8 @@
   height: 50vh;
   background-image: url(../../imgs/slide-1.jpg);
   background-size: cover;
-  display: flex;
+  @extend %flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   .landing__text {
     width: 70%;
     text-align: center;

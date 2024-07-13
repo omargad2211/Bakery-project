@@ -12,7 +12,7 @@
   font-weight: 400;
 }
 
-.blog-container__cards__card, .chefs__container__card, footer .footer, .order-section, .parallax__container, .offer__list__ul, .offer {
+.number__coner__text, .blog-container__cards__card, .chefs__container__card, footer .footer, .order-section, .parallax__container, .services__section, .landing, header nav ul, header, .offer__list__ul, .offer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -184,10 +184,7 @@
 
 header {
   width: 100%;
-  display: flex;
   height: 100px;
-  justify-content: center;
-  align-items: center;
   gap: 15px;
   margin: 15px 25px;
 }
@@ -199,9 +196,6 @@ header nav {
   padding: 0 30px;
 }
 header nav ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 40px;
   list-style: none;
 }
@@ -245,10 +239,7 @@ header .nav__btn:hover {
   height: 50vh;
   background-image: url(../../imgs/slide-1.jpg);
   background-size: cover;
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 .landing .landing__text {
   width: 70%;
@@ -266,11 +257,8 @@ header .nav__btn:hover {
 
 .services__section {
   margin-top: 50px;
-  display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  justify-content: center;
-  align-items: center;
   margin-bottom: 80px;
 }
 .services__section .services__card__img:hover {
@@ -301,7 +289,7 @@ header .nav__btn:hover {
 }
 .bakery__section {
   background-color: #F7F7F7;
-  padding: 0px 20px;
+  padding: 10px 20px;
 }
 .bakery__section__text {
   height: 90%;
@@ -352,6 +340,7 @@ header .nav__btn:hover {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   justify-content: center;
+  gap: 15px;
   align-items: center;
 }
 
@@ -636,10 +625,7 @@ footer .footer__logo img {
 }
 
 .number__coner__text {
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   text-align: center;
 }
 .number__coner__text p:first-child {
@@ -649,6 +635,14 @@ footer .footer__logo img {
   font-size: 35px;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
+}
+@media (max-width: 768px) {
+  .number__coner__text p:first-child {
+    color: white;
+    font-size: 30px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+  }
 }
 .number__coner__text p:first-child::before {
   content: "";
@@ -663,6 +657,14 @@ footer .footer__logo img {
   font-size: 16px;
   font-family: "Open sans", sans-serif;
   font-weight: 600;
+}
+@media (max-width: 768px) {
+  .number__coner__text p:last-child {
+    color: white;
+    font-size: 12px;
+    font-family: "Open sans", sans-serif;
+    font-weight: 600;
+  }
 }
 
 .form__input {
